@@ -34,6 +34,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_runtime_dependency "rack", "~> 2.0"
+  spec.add_runtime_dependency "erubis", "~> 2.0"
   spec.add_development_dependency "rack-test", "~> 1.0"
   spec.add_development_dependency "test-unit", "~>1.2"
 end
