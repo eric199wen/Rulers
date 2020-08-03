@@ -3,6 +3,7 @@ require "rulers/routing"
 require "rulers/util"
 require "rulers/dependencies"
 require "rulers/controller"
+require 'rulers/file_model'
 
 module Rulers
   class Application
@@ -19,7 +20,7 @@ module Rulers
         puts exception
         return [500, {'Content-Type' => 'text/html'}, ['Something went wrong!']]
       end
-      
+
       [200, {'Content-Type' => 'text/html'},[text]]
     end
   end
